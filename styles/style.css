@@ -1,0 +1,66 @@
+/***********Golobal Styles***********/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+}
+
+.header,
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+:root {
+    --primary-color: #FF5400;
+    --primary-color-h3: #131318;
+    --primary-color-p1: #ffffff;
+    --primary-color-p2: #424247;
+    --primary-color-p3: #5A5A5D;
+    --font-size-p: 18px;
+    --font-size-h1: 40px;
+    --font-size-h3: 30px;
+    --font-wight-p:400;
+    --font-wight-li:600;
+    --font-wight-h3:700;
+    --font-wight-h1:900;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.btn-primary-color {
+    background: var(--primary-color);
+}
+
+/************************************************ Manu styles ***/
+.manu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.manu-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #424247;
+    margin-left: 20px;
+    font-size: var(--font-size-p);
+    font-weight: var(--font-wight-li);
+}
