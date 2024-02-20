@@ -1,71 +1,88 @@
 /**************************** Global styles *******************************/
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Mulish", sans-serif;
 }
-.header , .main{
+
+.header,
+.main {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
-:root{
-    --text-color-li:#424247;
-    --text-color-p1:#FFFFFF;
-    --text-color-p2:#5A5A5D;
-    --text-color-p3:#FF5400;
-    --text-color-h3:#131318;
 
-    --bg-color-1:#FF5400;
-    --bg-color-2:#FFFBF7;
-    --bg-color-3:#F4FCFE;
-    --bg-color-4:#FEF5F5;
+:root {
+    --text-color-li: #424247;
+    --text-color-p1: #FFFFFF;
+    --text-color-p2: #5A5A5D;
+    --text-color-p3: #FF5400;
+    --text-color-h3: #131318;
 
-    --font-size-P:16px;
-    --font-weight-p:400;
-    --font-size-h3:30px;
-    --font-weight-h3:900;
-    --font-size-h1:50px;
-    --font-weight-h1:1000;
+    --bg-color-1: #FF5400;
+    --bg-color-2: #FFFBF7;
+    --bg-color-3: #F4FCFE;
+    --bg-color-4: #FEF5F5;
+
+    --font-size-P: 16px;
+    --font-weight-p: 400;
+    --font-size-h3: 30px;
+    --font-weight-h3: 900;
+    --font-size-h1: 50px;
+    --font-weight-h1: 1000;
 }
-.primary-text-color{
+
+.primary-text-color {
     color: var(--text-color-p2);
 }
-.primary-text-color-li{
+
+.primary-text-color-li {
     color: var(--text-color-li);
 }
-.tomato-primary-text-color{
+
+.tomato-primary-text-color {
     color: var(--text-color-p3);
 }
-.text-color-h3{
-color: var(--text-color-h3);
+
+.text-color-h3 {
+    color: var(--text-color-h3);
 }
-.white-primary-text-color{
+
+.white-primary-text-color {
     color: var(--text-color-p1);
 }
-.tomato-primary-bg-color{
+
+.tomato-primary-bg-color {
     background: var(--bg-color-1);
 }
-.font-size-P{
+
+.font-size-P {
     font-size: var(--font-size-P);
 }
-.font-weight-P{
+
+.font-weight-P {
     font-weight: var(--font-weight-p);
 }
-.font-size-h3{
+
+.font-size-h3 {
     font-size: var(--font-size-h3);
 }
-.font-weight-h3{
+
+.font-weight-h3 {
     font-weight: var(--font-weight-h3);
 }
-.font-size-h1{
+
+.font-size-h1 {
     font-size: var(--font-size-h1);
 }
-.font-weight-h1{
+
+.font-weight-h1 {
     font-weight: var(--font-weight-h1);
 }
-.btn-primary{
+
+.btn-primary {
     color: var(--text-color-p1);
     background: var(--bg-color-1);
     border: none;
@@ -74,66 +91,89 @@ color: var(--text-color-h3);
     font-weight: 400;
     text-align: center;
     border-radius: 5px;
-    
+
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
 }
 
 /*********************************************** nav styles ********************/
-.nav{
+
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 0px;
+    padding: 50px 20px;
 }
-.nav-title{
+
+.nav-title {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.nav ul{
+
+.nav ul {
     display: flex;
     list-style: none;
 }
-.nav ul li a{
+
+.nav ul li a {
     text-decoration: none;
     color: var(--text-color-li);
     font-weight: 700;
     font-size: 18px;
     margin-left: 20px;
 }
+
+.mobile-btn {
+    color: #131318;
+    font-size: 25px;
+    display: none;
+    margin-left: 20px;
+}
+
 /*********************************************** header content styles **************/
-.header-content{
+.header-content {
     background-image: url("../Images/bg1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
     border-radius: 20px;
+    background-position: center;
 }
-.overlay{
-    background-color: rgba(0,0,0,0.3);
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
     border: none;
     border-radius: 20px;
 }
-.content{
+
+.content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 106px 185px ;
+    padding: 106px 185px;
 }
-.header-text{
+
+.header-text {
     text-align: center;
     padding: 0px 60px 50px 60px;
 }
-.header-text h1{
+
+.header-text h1 {
     padding-bottom: 25px;
 }
-.form{
+
+.form {
     padding: 20px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     text-align: center;
-    
+
 }
-.form > input, select{
+
+.form>input,
+select {
     padding: 10px 30px;
     color: var(--text-color-p2);
     border: none;
@@ -142,24 +182,26 @@ color: var(--text-color-h3);
     font-weight: 400;
     margin-left: 5px;
 }
-.btn-primary{
+
+.form button {
     margin-left: 20px;
 }
 
 /**************************************************** tours content styles ******/
-.tours-container{
+.tours-container {
     display: flex;
     align-items: center;
     gap: 50px;
     margin-top: 100px;
 }
-.tours-content> p{
+
+.tours-content>p {
     color: var(--text-color-p2);
-    padding: 10px;
     text-align: justify;
     margin: 20px 0;
 }
-.tours-content>li{
+
+.tours-content>li {
     padding: 10px 30px;
     text-align: justify;
     color: var(--text-color-p2);
@@ -167,32 +209,328 @@ color: var(--text-color-h3);
 }
 
 /****************************************************** Destination styles **********/
-.item1{
-    grid-area: item1;
+.destination-content {
+    text-align: center;
+    padding: 0px 250px 50px 250px;
 }
-.item2{
-    grid-area: item2;
+
+.destination-content h3 {
+    padding-bottom: 20px;
 }
-.item3{
-    grid-area: item3;
+
+.row {
+    display: flex;
+    gap: 50px;
 }
-.item4{
-    grid-area: item4;
+
+.row img {
+    width: 100%;
 }
-.item5{
-    grid-area: item5;
+
+.row h3 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
 }
-.item6{
-    grid-area: item6;
+
+.content-maldives,
+.content-indonesia,
+.content-srilanka,
+.content-america,
+.content-kashmir,
+.content-bangladesh,
+.content-bandarban {
+    position: relative;
+    bottom: 50%;
 }
-.item7{
-    grid-area: item7;
+
+.display-none-esponsive {
+    display: none;
 }
-.destination-image{
-    display: grid;
-    grid-template-areas: 
-     "item1 item2"
-     "item3 item4 item5"
-     "item6 item7"
-    ;
+
+/******************************************************* why choose us styles************/
+
+.why-choose-us-header-content,
+.discounts-container-header-content {
+    text-align: center;
+    padding: 0px 255px 20px 255px;
+}
+
+.why-choose-us-header-content h3 {
+    padding-bottom: 20px;
+}
+
+.why-choose-us-row {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    width: 600px;
+    border-radius: 20px;
+    border: none;
+}
+
+.card-1 {
+    background: var(--bg-color-2);
+}
+
+.card-2 {
+    background: var(--bg-color-3);
+}
+
+.card-3 {
+    background: var(--bg-color-4);
+}
+
+.card-content {
+    padding: 32px 55px 32px 32px;
+}
+
+.card-content h3 {
+    padding: 30px 50px 15px 0px;
+    color: var(--text-color-h3);
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+.card-content p {
+    font-size: var(--font-size-P);
+    color: var(--text-color-p2);
+}
+
+/******************************************************************** Deals & Discounts styles **********************/
+.discounts-card-one {
+    background-image: url("../Images/Group 39.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 1170px;
+    height: 500px;
+}
+
+.discounts-card-content {
+    background: rgba(255, 255, 255, 0.5);
+    max-width: 579px;
+    border-radius: 10px;
+    position: relative;
+    left: 450px;
+    top: 60px;
+    padding: 40px;
+}
+
+.discount-card-content-p {
+    display: flex;
+    gap: 30px;
+}
+
+.discount-card-content-p p,
+i {
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.discount-card-content-p p {
+    color: var(--text-color-p2);
+}
+
+.discounts-card-content h3 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #131318;
+    padding: 20px 0px;
+}
+
+.discounts-card-content p {
+    color: var(--text-color-p2);
+    font-size: 20px;
+    font-weight: var(--font-weight-p);
+}
+
+.discounts-card-content h4 {
+    color: var(--text-color-p3);
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 0px;
+}
+
+.discounts-card-content button {
+    padding: 20px 30px;
+}
+
+/* .discounts-card-content {
+    
+    
+    
+} */
+
+
+/************************************************************** Responsive styles **************************/
+@media screen and (max-width:576px) {
+    .mobile-btn {
+        display: block;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form>input,
+    select {
+        margin-bottom: 20px;
+    }
+
+    .header-text {
+        padding: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .content {
+        padding: 50px;
+    }
+
+    /*************************** tours styles **************************/
+    .tours-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .tours-place-img img {
+        width: 100%;
+    }
+
+    /********************************* destination styles  ****************/
+    .destination-content {
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .row img {
+        height: 300px;
+    }
+
+    .content-maldives,
+    .content-indonesia,
+    .content-srilanka,
+    .content-america,
+    .content-kashmir,
+    .content-bangladesh,
+    .content-bandarban {
+        bottom: 175px;
+    }
+
+    /******************************************************** Why choose us ****************/
+    .why-choose-us-container {
+        padding: 20px;
+    }
+
+    .why-choose-us-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-choose-us-header-content,
+    .discounts-container-header-content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .mobile-btn {
+        display: block;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form>input,
+    select {
+        margin-bottom: 20px;
+    }
+
+    .header-text {
+        padding: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .content {
+        padding: 50px;
+    }
+
+    /*************************** tours styles **************************/
+    .tours-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .tours-place-img img {
+        width: 100%;
+    }
+
+    /********************************* destination styles  ****************/
+    .destination-content {
+        padding: 20px;
+    }
+
+    .item h3 {
+        font-size: 18px;
+    }
+
+    /******************************************************** Why choose us ****************/
+    .why-choose-us-container {
+        padding: 20px;
+    }
+
+    .why-choose-us-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-choose-us-header-content,
+    .discounts-container-header-content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        width: 400px;
+    }
 }
