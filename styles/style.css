@@ -86,9 +86,9 @@
     color: var(--text-color-p1);
     background: var(--bg-color-1);
     border: none;
-    padding: 10px 30px;
+    padding: 14px 25px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     border-radius: 5px;
 
@@ -306,72 +306,126 @@ select {
 }
 
 /******************************************************************** Deals & Discounts styles **********************/
-.discounts-card-one {
+.discounts-container {
+    text-align: center;
+}
+
+.discounts-card-one,
+.discounts-card-two,
+.discounts-card-three {
     background-image: url("../Images/Group 39.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    width: 1170px;
+    max-width: 100%;
     height: 500px;
+    margin-top: 30px;
 }
 
-.discounts-card-content {
-    background: rgba(255, 255, 255, 0.5);
-    max-width: 579px;
+.discounts-overlay {
+    background-color: rgba(255, 11, 11, 0.5);
+    height: 10%;
+    padding: 0px;
+
+}
+
+.discounts-card-content-one,
+.discounts-card-content-two,
+.discounts-card-content-three {
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 500px;
     border-radius: 10px;
     position: relative;
-    left: 450px;
+    left: 530px;
     top: 60px;
-    padding: 40px;
+    padding: 50px;
+
+}
+
+.discounts-card-content-two {
+    left: 100px;
 }
 
 .discount-card-content-p {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
-.discount-card-content-p p,
-i {
+.discounts-card-container p,
+i,
+h4 {
     color: #FF5400;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.discount-card-content-p p {
-    color: var(--text-color-p2);
-}
-
-.discounts-card-content h3 {
-    font-size: 25px;
-    font-weight: 800;
-    color: #131318;
-    padding: 20px 0px;
-}
-
-.discounts-card-content p {
-    color: var(--text-color-p2);
     font-size: 20px;
     font-weight: var(--font-weight-p);
 }
 
-.discounts-card-content h4 {
-    color: var(--text-color-p3);
-    font-size: 20px;
-    font-weight: 900;
+.discounts-card-container P {
+    color: var(--text-color-p2);
+}
+
+.discounts-card-container h3 {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--text-color-h3);
     padding: 20px 0px;
 }
 
-.discounts-card-content button {
-    padding: 20px 30px;
+.discounts-card-container h4 {
+    font-weight: 700;
+    padding: 16px 0px 24px 0px;
 }
 
-/* .discounts-card-content {
-    
-    
-    
-} */
+.discounts-card-two {
+    background-image: url("../Images/Group 40.png");
+}
 
+.see-all-packages-btn {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*****************************************************************simple-place***************/
+.simple-place-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.col-1 h3 {
+    padding: 0px 50px 20px 0px;
+    font-size: 40px;
+}
+
+.col-1 p {
+    line-height: 2;
+}
+
+.col-1 ul {
+    padding: 20px 10px 30px 30px;
+}
+
+.col-1 li {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color-h3);
+    padding: 10px;
+}
+
+.col-1 button {
+    padding: 15px 42px;
+}
+
+
+.col-2 iframe {
+    width: 600px;
+    height: 338px;
+    border: none;
+    border-radius: 20px;
+}
 
 /************************************************************** Responsive styles **************************/
 @media screen and (max-width:576px) {
@@ -460,6 +514,38 @@ i {
     .card-3 {
         width: 400px;
     }
+
+    /******************************************************************** Deals & Discounts styles **********************/
+
+    .discounts-card-one,
+    .discounts-card-two,
+    .discounts-card-three {
+        width: 100%;
+        height: 650px;
+    }
+
+
+    .discounts-card-content-one,
+    .discounts-card-content-two,
+    .discounts-card-content-three {
+        max-width: 300px;
+        height: 400px;
+        left: 70px;
+        right: 70px;
+        top: 130px;
+        padding: 30px;
+    }
+
+    /*****************************************************************simple-place***************/
+    .simple-place-container {
+        flex-direction: column;
+    }
+
+    .col-2 iframe {
+        width: 500px;
+        height: 282px;
+    }
+
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -532,5 +618,36 @@ i {
     .card-2,
     .card-3 {
         width: 400px;
+    }
+
+    /******************************************************************** Deals & Discounts styles **********************/
+
+    .discounts-card-one,
+    .discounts-card-two,
+    .discounts-card-three {
+        width: 100%;
+        height: 650px;
+    }
+
+
+    .discounts-card-content-one,
+    .discounts-card-content-two,
+    .discounts-card-content-three {
+        max-width: 300px;
+        height: 400px;
+        left: 70px;
+        right: 70px;
+        top: 130px;
+        padding: 30px;
+    }
+
+    /*****************************************************************simple-place***************/
+    .simple-place-container {
+        flex-direction: column;
+    }
+
+    .col-2 iframe {
+        width: 550px;
+        height: 310px;
     }
 }
